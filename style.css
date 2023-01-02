@@ -1,0 +1,30 @@
+body {
+    background-image: url("swirl-637866.jpeg");
+    background-size: cover;
+    
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    font-size: 5rem;
+    background-color: white;
+    width: 10em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+
+}
+
+#t {
+    width: 40em;
+    height: auto;
+    display: flex;
+    margin-top: 5em;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
