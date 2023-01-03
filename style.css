@@ -1,6 +1,6 @@
 body {
     background-image: url("swirl-637866.jpeg");
-    background-size: cover;
+ 
     
 }
 
@@ -30,4 +30,27 @@ h1 {
     height: auto;
     margin-top: 5em;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 820px) {
+    h1 {
+        width: 15em;
+        font-size: 2rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 490px) {
+    h1 {
+        width: 10em;
+        font-size: 1.5rem;
+    }
+
+    #t {
+        width: 15em;
+    }
+
+    
 }
