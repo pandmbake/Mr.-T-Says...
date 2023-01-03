@@ -15,16 +15,19 @@ h1 {
     justify-content: center;
     margin: auto;
     align-items: center;
+    margin-top: .5em;
 
 }
 
-#t {
-    width: 40em;
-    height: auto;
+.tContainer {
+    width: 100%;
     display: flex;
-    margin-top: 5em;
-    align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+}
+#t {
+    width: 25em;
+    height: auto;
+    margin-top: 5em;
     cursor: pointer;
 }
