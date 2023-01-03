@@ -1,4 +1,6 @@
-const clips = new Audio [
+let currentAudio;
+
+const clips = [
     "audio/big-mouth.mp3",
     "audio/bumper.mp3",
     "audio/dont-like-church-sneaking-in-on-my-privacy-understand.mp3",
@@ -13,35 +15,26 @@ const clips = new Audio [
     "audio/youre-very-lucky-man-i-could-have-been-real-mad.mp3",
 ];
 
-function getRandomClip() {
-    return clips[Math.floor(Math.random() * clips.length)];
-  }
+  
+  const playButton = document.getElementById('t');
+  
+  playButton.addEventListener('click', () => {
+    if (currentAudio) {
+      currentAudio.pause();
+    }
+  
+    const randomIndex = Math.floor(Math.random() * clips.length);
+  const randomClip = clips[randomIndex];
 
-  function playAudio() {
-    const element = document.getElementById('t');
-    const randomClip = getRandomClip();
-    document.getElementById('t').play();
-  }
-  
-  const image = document.getElementById('t');
-  image.addEventListener('click', playAudio);
+  currentAudio = new Audio(randomClip);
+  currentAudio.play();
+});
 
 
-  /*
-  
-  function getRandomFact() {
-    return facts[Math.floor(Math.random() * facts.length)];
-  }
-  
-  function changeInnerHTML() {
-    const element = document.getElementById('fact');
-    const randomFact = getRandomFact();
-    document.getElementById('fact').innerHTML = randomFact;
-  }
-  
-  const button = document.getElementById('button');
-  button.addEventListener('click', changeInnerHTML);*/
-  
+
+
+
+
   
   
   
